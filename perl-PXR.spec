@@ -24,22 +24,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Perl XML Router tools that contains:
-- PXR::Node   - provides an slick, featureful XML node representation;
-- PXR::Parser - a simple, speedy, efficient pure Perl SAX XML parser;
-- PXR::NS     - namespace constants for PXR/JABBER(tm)/XMPP
-                development;
-- PXR::Utils  - general purpose common utility functions for PXR
-                Tools.
+- PXR::Node	- provides an slick, featureful XML node representation;
+- PXR::Parser	- a simple, speedy, efficient pure Perl SAX XML parser;
+- PXR::NS	- namespace constants for PXR/JABBER(tm)/XMPP
+		  development;
+- PXR::Utils	- general purpose common utility functions for PXR
+		  Tools.
 
 %description -l pl
 Narzêdzia routera XML w Perlu, zawieraj±ce:
-- PXR::Node   - udostêpnia zgrabn±, posiadaj±c± du¿e mo¿liwo¶ci
-                reprezentacjê wêz³ów XML;
-- PXR::Parser - prosty, szybki, wydajny analizator SAX XML w czystym
-                Perlu;
-- PXR::NS     - sta³e przestrzeni nazw dla tworzenia programów
-                korzystaj±cych z PXR/JABBER(tm)/XMPP;
-- PXR::Utils  - funkcje narzêdziowe ogólnego stosowania dla PXR Tools.
+- PXR::Node	- udostêpnia zgrabn±, posiadaj±c± du¿e mo¿liwo¶ci
+		  reprezentacjê wêz³ów XML;
+- PXR::Parser	- prosty, szybki, wydajny analizator SAX XML w czystym
+		  Perlu;
+- PXR::NS	- sta³e przestrzeni nazw dla tworzenia programów
+		  korzystaj±cych z PXR/JABBER(tm)/XMPP;
+- PXR::Utils	- funkcje narzêdziowe ogólnego stosowania dla PXR Tools.
 
 %prep
 %setup -q -n %{pdir}-%{version}
