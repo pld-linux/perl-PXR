@@ -9,6 +9,7 @@ Summary(pl):	PXR - narzêdzia routera XML w Perlu do wykorzystania w innych proje
 Name:		perl-PXR
 Version:	0.1.5
 Release:	1
+# package have GPLv2 attached in Source0
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/N/NP/NPEREZ/%{pdir}-%{version}.tar.gz
