@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	PXR
@@ -15,7 +15,7 @@ Source0:	http://www.cpan.org/modules/by-authors/id/N/NP/NPEREZ/%{pdir}-%{version
 # Source0-md5:	ee51da0051dc83824b69eddab013f1d8
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{!?_without_tests:1}0
+%if %{with tests}
 BuildRequires:	perl-POE-Filter-XML
 %endif
 BuildArch:	noarch
@@ -48,7 +48,7 @@ Narzêdzia routera XML w Perlu, zawieraj±ce:
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
