@@ -4,8 +4,8 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	PXR
-Summary:	PXR - Perl XML Router Tools for use in other projects
-#Summary(pl):	
+Summary:	PXR - Perl XML Router tools for use in other projects
+Summary(pl):	PXR - narzêdzia routera XML w Perlu do wykorzystania w innych projektach
 Name:		perl-PXR
 Version:	0.1.5
 Release:	1
@@ -22,20 +22,23 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PXR::Node
-    Provides an slick, featureful XML node representation
+Perl XML Router tools that contains:
+- PXR::Node   - provides an slick, featureful XML node representation;
+- PXR::Parser - a simple, speedy, efficient pure Perl SAX XML parser;
+- PXR::NS     - namespace constants for PXR/JABBER(tm)/XMPP
+                development;
+- PXR::Utils  - general purpose common utility functions for PXR
+                Tools.
 
-PXR::Parser
-    A simple, speedy, efficient pure perl SAX XML parser
-
-PXR::NS
-    Namespace constants for PXR/JABBER(tm)/XMPP development
-
-PXR::Utils
-    General purpose common utility functions for PXR Tools
-
-# %description -l pl
-# TODO
+%description -l pl
+Narzêdzia routera XML w Perlu, zawieraj±ce:
+- PXR::Node   - udostêpnia zgrabn±, posiadaj±c± du¿e mo¿liwo¶ci
+                reprezentacjê wêz³ów XML;
+- PXR::Parser - prosty, szybki, wydajny analizator SAX XML w czystym
+                Perlu;
+- PXR::NS     - sta³e przestrzeni nazw dla tworzenia programów
+                korzystaj±cych z PXR/JABBER(tm)/XMPP;
+- PXR::Utils  - funkcje narzêdziowe ogólnego stosowania dla PXR Tools.
 
 %prep
 %setup -q -n %{pdir}-%{version}
