@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	PXR
 Summary:	PXR - Perl XML router tools for use in other projects
-Summary(pl):	PXR - narzêdzia routera XML w Perlu do wykorzystania w innych projektach
+Summary(pl.UTF-8):   PXR - narzÄ™dzia routera XML w Perlu do wykorzystania w innych projektach
 Name:		perl-PXR
 Version:	0.1.5
 Release:	2
@@ -31,15 +31,15 @@ Perl XML Router tools that contains:
 - PXR::Utils	- general purpose common utility functions for PXR
 		  Tools.
 
-%description -l pl
-Narzêdzia routera XML w Perlu, zawieraj±ce:
-- PXR::Node	- udostêpnia zgrabn±, posiadaj±c± du¿e mo¿liwo¶ci
-		  reprezentacjê wêz³ów XML;
+%description -l pl.UTF-8
+NarzÄ™dzia routera XML w Perlu, zawierajÄ…ce:
+- PXR::Node	- udostÄ™pnia zgrabnÄ…, posiadajÄ…cÄ… duÅ¼e moÅ¼liwoÅ›ci
+		  reprezentacjÄ™ wÄ™zÅ‚Ã³w XML;
 - PXR::Parser	- prosty, szybki, wydajny analizator SAX XML w czystym
 		  Perlu;
-- PXR::NS	- sta³e przestrzeni nazw dla tworzenia programów
-		  korzystaj±cych z PXR/JABBER(tm)/XMPP;
-- PXR::Utils	- funkcje narzêdziowe ogólnego stosowania dla PXR Tools.
+- PXR::NS	- staÅ‚e przestrzeni nazw dla tworzenia programÃ³w
+		  korzystajÄ…cych z PXR/JABBER(tm)/XMPP;
+- PXR::Utils	- funkcje narzÄ™dziowe ogÃ³lnego stosowania dla PXR Tools.
 
 %prep
 %setup -q -n %{pdir}-%{version}
