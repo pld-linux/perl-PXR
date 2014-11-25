@@ -1,9 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	PXR
+%include	/usr/lib/rpm/macros.perl
 Summary:	PXR - Perl XML router tools for use in other projects
 Summary(pl.UTF-8):	PXR - narzędzia routera XML w Perlu do wykorzystania w innych projektach
 Name:		perl-PXR
@@ -14,6 +14,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/N/NP/NPEREZ/%{pdir}-%{version}.tar.gz
 # Source0-md5:	ee51da0051dc83824b69eddab013f1d8
+URL:		http://search.cpan.org/dist/PXR-/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
