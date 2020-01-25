@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pdir	PXR
-%include	/usr/lib/rpm/macros.perl
 Summary:	PXR - Perl XML router tools for use in other projects
 Summary(pl.UTF-8):	PXR - narzędzia routera XML w Perlu do wykorzystania w innych projektach
 Name:		perl-PXR
